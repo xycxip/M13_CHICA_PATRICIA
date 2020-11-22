@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 
 <html lang="en">
 <head>
@@ -7,14 +7,16 @@
   <title>Module 13 Practical</title>
   <meta name="description" content="Module 13 practical example">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">  
 
 </head>
 
 <body>
   <header>
-    <figure>
+    <div id = "logo">
       <img src="smeraldo-logo.png" alt="Logo of the smeraldo business">
-    </figure>
+  </div>
     <h1>SMERALDO FLOWER SHOP</h1>
     <nav>
       <ul>
@@ -26,51 +28,68 @@
     </nav>
    </header>
 
-   <section>
+   <main>
     <h2>FLOWERS FOR ALL OCCASSIONS</h2>
      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non turpis vel velit consectetur interdum sit amet non nisl. Mauris vulputate interdum felis, non volutpat mi. Praesent ac ante tellus. Aenean dictum enim non facilisis molestie. Duis eget cursus sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non turpis vel velit consectetur interdum sit amet non nisl. Mauris vulputate interdum felis, non volutpat mi. Praesent ac ante tellus. Aenean dictum enim non facilisis molestie. Duis eget cursus sem. Curabitur vehicula, orci ac maximus laoreet, dolor urna consequat est, convallis malesuada mauris est sit amet magna.
       Lorem ipsum dolor sit amet.
      </p>
-     <figure>
-      <img src="bouquet.jpeg" alt="Bouquet of flowers">
-      <img src="arrangement.jpeg" alt="BArrangment of flowers">
-      <img src="specialty.jpg" alt="Special occassions">
-   </figure>
- </section>
+   </main>
 
- <form action ="/action_page.php">
-
-  <h3> CONTACT US </h3>
-  <label for = "fname">First Name:</label><br>
-  <input tyepe = "text" id = "fname" name = "fname"><br>
-  <label for = "lname">Last Name:</label><br>
-  <input tyepe = "text" id = "lname" name = "lname"><br>
-
-  <label for="email">Enter your email:</label><br>
-  <input type="email" id="email" name="email"><br>
-  <br>
+   <section>
+        <figure>
+          <div class="container">
+            <div class="boxone">
+              <img src="bouquet.jpeg" alt="Bouquet of flowers">
+              <figcaption>BOUQUETS</figcaption>
+            </div>
+            <div class="boxtwo">
+              <img src="arrangement.jpeg" alt="BArrangment of flowers">
+              <figcaption>ARRANGEMENTS</figcaption>
+            </div>
+            <div class="boxthree">
+              <img src="specialty.jpg" alt="Special occassions">
+              <figcaption>SPECIAL OCCASSIONS</figcaption>
+            </div>
+          </div>
+        </figure>
+    </section>
   
-  <!-- Reason for contacting form -->
-  <h4> Reason for contacting</h4> 
-  <input type="radio" id="question" name="event" value="question">
-  <label for ="question">I have a question</label><br> 
-  <input type="radio" id="order" name="event" value="order">
-  <label for ="order">I'd like to order</label><br> 
-  <input type="radio" id="problem" name="event" value="problem">
-  <label for ="problemwedding">I have a problem</label><br>
+    <aside>
+      <form action ="/action_page.php">
+
+        <h3> CONTACT US </h3>
+          <div class="form-box">
+            <label for = "fname">First Name:</label><br>
+            <input tyepe = "text" id = "fname" name = "fname"><br></div>
+            <div class="form-box">
+            <label for = "lname">Last Name:</label><br>
+            <input tyepe = "text" id = "lname" name = "lname"><br></div>
+            <div class="form-box">
+            <label for="email">Enter your email:</label><br>
+            <input type="email" id="email" name="email"><br></div>
+  
+            <!-- Reason for contacting form -->
+  
+             <h4> Reason for contacting</h4> 
+             <input type="radio" id="question" name="event" value="question">
+              <label for ="question">I have a question</label><br> 
+            <input type="radio" id="order" name="event" value="order">
+            <label for ="order">I'd like to order</label><br> 
+            <input type="radio" id="problem" name="event" value="problem">
+            <label for ="problemwedding">I have a problem</label><br>
 
   
-  <!-- Additional information -->
-  <h4>Message</h4>
-  <label for="message">Message:</label><br>
-  <textarea type="message" id="message" name="message"></textarea><br>
-  <br>
+            <!-- Additional information -->
+            <div class="form-box">
+            <label for="message">Message:</label><br><br>
+            <textarea type="message" id="message" name="message"></textarea><br></div>
+            <br>
+            <div class="form-box">
+            <input type="submit" value="Submit"></div>
 
-  <input type="submit" value="Submit">
+      </form>
 
-</form>
 
-<aside>
   <figure>
     <img src="florist.jpeg" alt="florist">
   </figure>
